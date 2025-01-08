@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../src/output.css" rel="stylesheet" />
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body class="bg-black">
-    <div>
+    <div class="px-10">
       <!-- 1111 -->
-        <div class="min-w-min-screen pt-6 flex flex-col items-center gap-20">
+        <div class="min-w-min-screen pt-6  flex flex-col items-center gap-20 ">
           <!-- --------------- nav bar ----------------------------- -->
            <div class="flex gap-7 p-3  rounded-3xl">
             <!-- Logo -->
             <div class="text-button">MiniaMaker.ia</div>
             <!-- Corpt du navbar -->
              <div class="flex gap-4 ">
-              <div class="text-nav-color">Résultas</div>
-              <div class="text-nav-color">Process</div>
-              <div class="text-nav-color">Prix</div>
-              <div class="text-nav-color">FAQ</div>
-              <div class="text-nav-color">Affilation</div>
+              <div class="text-nav-color cursor-pointer">Résultas</div>
+              <div class="text-nav-color cursor-pointer">Process</div>
+              <div class="text-nav-color cursor-pointer">Prix</div>
+              <div class="text-nav-color cursor-pointer">FAQ</div>
+              <div class="text-nav-color cursor-pointer">Affilation</div>
              </div>
 
              <!-- Contact du nav bar  -->
-              <div class="text-nav-color bg-slate-100/10 w-[190px] text-center rounded-sm">Je réserve un apllel <span class="text-button">L</span></div>
+              <div class="text-nav-color cursor-pointer bg-slate-100/10 w-[190px] text-center rounded-sm">Je réserve un apllel <span class="text-button">L</span></div>
              
            </div>
 
@@ -40,9 +47,9 @@
                </div>
                <div class="text-text">Livraison en moins de 48H et retours illimités.</div>
                <!-- button -->
-               <div>
-                  <button class="w-[230px] text-text bg-btn p-2 rounded-lg ">Je veux ma minature</button>
-                  <button class="w-[230px] text-text bg-gradient-to-t from-[rgb(33,33,33)] to-[rgb(3,0,3)] to-80% p-2 rounded-lg" >Je réserve un appel</button>
+               <div class="flex gap-4">
+                  <button class="w-[230px] text-text bg-gradient-to-b from-orange-500 to-orange-400/75 to-99% p-2 rounded-lg ">Je veux ma minature</button>
+                  <button class="w-[230px] text-text bg-gradient-to-t from-[rgb(19,19,19)] from-50% to-[rgb(37,36,37)] to-90%  p-2 rounded-lg" >Je réserve un appel</button>
                </div>
             </div>
         </div>
