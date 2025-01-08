@@ -553,3 +553,16 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
