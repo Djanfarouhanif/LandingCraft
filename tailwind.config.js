@@ -15,7 +15,8 @@ module.exports = {
         "btn": "#f59221"
       },
      animation: {
-        speed: 'speed1 6.2s ease-in-out infinite'
+        speed1: 'speed1 6.2s ease infinite',
+        speed2: 'speed1 6.2s ease infinite'
      },
      keyframes: {
       speed1: {
@@ -24,7 +25,9 @@ module.exports = {
         '100%' :{transform: 'translateX(-100%)'}
       },
       speed2: {
-        
+        '0%': {transform: 'translateX(100%)'},
+
+        '100%': {transform: 'translateX(-100%)'}
       }
      }
       

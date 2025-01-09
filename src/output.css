@@ -598,6 +598,34 @@ video {
   min-width: 100vh;
 }
 
+@keyframes speed1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-speed1 {
+  animation: speed1 6.2s ease infinite;
+}
+
+@keyframes speed1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-speed2 {
+  animation: speed1 6.2s ease infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
