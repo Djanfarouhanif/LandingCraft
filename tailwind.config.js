@@ -13,7 +13,20 @@ module.exports = {
       },
       backgroundColor: {
         "btn": "#f59221"
+      },
+     animation: {
+        speed: 'speed1 6.2s ease-in-out infinite'
+     },
+     keyframes: {
+      speed1: {
+        '0%': {transform: 'translateX(100%)'},
+        
+        '100%' :{transform: 'translateX(-100%)'}
+      },
+      speed2: {
+        
       }
+     }
       
     },
   },
