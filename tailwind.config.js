@@ -20,14 +20,14 @@ module.exports = {
      },
      keyframes: {
       speed1: {
-        '0%': {transform: 'translateX(100%)'},
+        '0%': {transform: 'translateX(0%)'},
         
         '100%' :{transform: 'translateX(-100%)'}
       },
       speed2: {
         '0%': {transform: 'translateX(100%)'},
 
-        '100%': {transform: 'translateX(-100%)'}
+        '100%': {transform: 'translateX(-200%)'}
       }
      }
       
