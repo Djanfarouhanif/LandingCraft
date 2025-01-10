@@ -15,20 +15,22 @@ module.exports = {
         "btn": "#f59221"
       },
      animation: {
-        speed1: 'speed1 6.2s ease infinite',
-        speed2: 'speed1 6.2s ease infinite'
+        speed1: 'speed1 10s  infinite linear',
+        speed2: 'speed2 10s  infinite linear',
+       
      },
      keyframes: {
       speed1: {
         '0%': {transform: 'translateX(0%)'},
         
-        '100%' :{transform: 'translateX(-100%)'}
+        '100%' :{transform: 'translateX(calc(-350px* 4))'}
       },
       speed2: {
-        '0%': {transform: 'translateX(100%)'},
+        '0%': {transform:  'translateX( calc(-350px * 4))'},
 
-        '100%': {transform: 'translateX(-200%)'}
+        '100%': { transform: 'translateX(0%)' }
       }
+      
      }
       
     },
