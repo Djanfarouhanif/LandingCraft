@@ -31,6 +31,9 @@ module.exports = {
         '100%': { transform: 'translateX(0%)' }
       }
       
+     },
+     boxShadow: {
+      'item': '10px 10px  10px 10px white'
      }
       
     },

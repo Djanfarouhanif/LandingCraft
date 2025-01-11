@@ -34,14 +34,32 @@
      background-size: 10px 10px;
     
     }
+    .prof{
+      position: relative;
+    }
+
+    .prof::after {
+        content: '';
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.599);
+        right: 0;
+        top: 0;
+        z-index: 4;
+        
+      
+        
+    }
+
     </style>
   </head>
   <body class="bg-black">
-    <div class="px-10">
+    <div class="px-20">
       <!-- 1111 -->
         <div class="b  min-w-min-screen p-6 rounded-b-2xl   flex flex-col items-center gap-20 ">
           <!-- --------------- nav bar ----------------------------- -->
-           <div class="flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10">
+           <div class="fixed z-10 flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10">
             <!-- Logo -->
             <div class="text-button">MiniaMaker.ia</div>
             <!-- Corpt du navbar -->
@@ -59,9 +77,9 @@
            </div>
 
            <!-- ------------------ body 1--------------------- -->
-            <div class=" flex flex-col gap-8 items-center justify-center">
+            <div class=" flex flex-col gap-8 items-center justify-center pt-20">
               <!-- Offre de lancement -->
-              <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 rounded-3xl">
+              <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 px-3 rounded-3xl">
                 <div class="w-2 h-2 bg-button rounded-full"></div>
                 <div class="text-nav-color flex gap-2"><span>Offre de lancemment </span> <span class="text-text">03 10 40 30</span></div>
               </div>
@@ -118,32 +136,61 @@
         </div>
         <!-- 333333 -->
         <div class="min-w-min-screen flex flex-col items-center r py-10 ">
-          <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 rounded-3xl">
+          <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 px-3 rounded-3xl">
             <div class="text-nav-color flex gap-2">C'est pour ça qu'on nous fait confiance</div>
           </div>
 
           <div class="text-text text-[54px]"> Vos Stats Explosent: </div>
 
-          <div class="grid-cols-2  grid   gap-4 ">
-              <div class=>
+          <div class="grid-cols-2 grid gap-4 h-[320px]">
+              <div class= "prof  h-full">
                   <div class=" border-l border-orange-500 p-8 pb-16">
                     <h1 class="text-text text-[30px] pb-4">Yannis Haismann</h1>
                     <p class="text-nav-color">Avec notre minature optimisée, Yannis a boosté son CTR de 2 % à 6,4% ce qui lui a permis de générer 2,4 fois plus de vues sur cette vidéo</p>
                   </div>
-                  <div class="border border-r-0 p-8 flex  items-center gap-8">
+                  <div class=" border-[0.1px] border-white/20 border-r-0 p-8 flex  items-center gap-8">
                       <h1 class="text-text  text-[25px]">Johan Code </h1>
                       <p class="text-nav-color">6.3x plus de vues</p>
                   </div>
               </div>
               <!-- img  -->
-              <div class="w-[500px] rounded-3xl border-[40px] border-[#343333] ">
-                <img class="w-full h-full" src="./image/11.png" alt="">
+              <div class="relative  bg-[#343333] rounded-3xl border-[40px] border-[#343333] overflow-hidden">
+                <div class=" absolute bottom-5 text-text flex items-center gap-2 p-4"> <div class="w-[54px] h-[54px] rounded-full bg-[#1c1b1b]"></div> <p>Yannis Haismann</p> </div>
+                <img class="w-full h-full object-center rounded-2xl " src="./image/11.png" alt="">
               </div>
           </div>
         </div>
 
         <!-- 4444 -->
-         <div></div>
+         <div class="min-w-min-screen flex flex-col items-center justify-center">
+          <!-- -------process------- -->
+          <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 px-3 rounded-3xl">
+            <div class="text-nav-color flex gap-2">Notre process</div>
+          </div>
+
+          <div class="text-text text-[54px] py-4"> Notre Process En 3 Etapes: </div>
+          <div class="text-nav-color">Gagnez du temps, gagnez des vues.</div>
+
+          <!-- ----------items -------- -->
+           <div class="grid-cols-3 grid pt-9 gap-6">
+            <!-- item -->
+            <div class="bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
+              <!-- image -->
+              <div class="h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
+                  <p>ha</p>
+              </div>
+              <div>
+                <h1 class="text-[30px] text-text text-center">1.Onboarding</h1>
+                <p class="text-center text-nav-color ">Via notre formulaire, on récolte toutes les informations nécessaires</p>
+              </div>
+            </div>
+
+            
+           </div>
+
+         </div>
+         <!-- 5555 -->
+          <div></div>
     </div>
   </body>
 </html>
