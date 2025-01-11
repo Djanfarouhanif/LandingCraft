@@ -35,7 +35,10 @@ module.exports = {
      boxShadow: {
       'item': 'inset 0px 0px  100px 5px ',
       'sb': '1px -1px 1px  white'
-     }
+     },
+    borderWidth: {
+      '8': '4px'
+    }
       
     },
   },
