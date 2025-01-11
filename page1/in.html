@@ -8,95 +8,37 @@
       body{
          margin: 0;
          padding: 0;
-         min-height: 100vh;
-         display: grid;
+         height: 100vh;
+         background-color: black;
+         background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 255, 0.396) .5px, transparent .1px ),
+          /* -webkit-linear-gradient(0deg, red 2px, transparent 2px), */
+          -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.509) 1px , transparent 1px);
+
+         background-size: 100px 100px;
+
 
       }
 
-      .slider{
-         height: 255px;
-         margin: auto;
-         position: relative;
-         width: 90%;
-         display: grid;
-         place-items: center;
-         overflow: hidden;
-      }
-      .slide-track{
+      .container{
          display: flex;
-         width: calc(250px * 18);
-         animation: inf 10s infinite linear
+         align-items:center;
+         justify-content: center;
+         padding: 20px;
+      }
+      .cube{
+         width: 100px;
+         height: 100px;
+         box-shadow: 0 0px 1px .1px white; 
+         color: white;
          
       }
-
-      @keyframes inf {
-         0%{
-            transform: translateX(0);
-
-         }
-         100% {
-            transform: translateX(calc(-250px*9));
-         }
-      }
-      .slide {
-         height: 200px;
-         width: 250px;
-         display: flex;
-         align-items: center;
-         padding: 15px;
-      }
-      img{
-         width: 100%;
-      }
-
-      .slider::before,
-      .slider::after {
-         background: linear-gradient(to right, rgba(255, 255,255,1) 0%,
-         rgba(255, 255,255, 0) 100%);
-         content: '';
-         height: 100%;
-         position: absolute;
-         width: 15%;
-         z-index: 2;
-      }
-      .slider::before{
-         left: 0;
-         top: 0;
-      }
-      .slider::after{
-         right: 0;
-         top: 0;
-         transform: rotateZ(100deg);
-      }
+     
    </style>
 </head>
 <body>
-   <div class="slider">
-    
-      <div class="slide-track">
-
-           <!-- img 1 -->
-         <div class="slide"><img src="./image/1.png" alt=""></div>
-         <div class="slide"><img src="./image/11.png" alt=""></div>
-         <div class="slide"><img src="./image/12.png" alt=""></div>
-         <div class="slide"><img src="./image/port.png" alt=""></div>
-         <div class="slide"><img src="./image/port1.png" alt=""></div>
-         <div class="slide"><img src="./image/trac1.png" alt=""></div>
-         <div class="slide"><img src="./image/trac2.png" alt=""></div>
-         <div class="slide"><img src="./image/port.png" alt=""></div>
-         <div class="slide"><img src="image/trac3.png" alt=""></div>
-
-         <!-- img 22 -->
-         <div class="slide"><img src="./image/1.png" alt=""></div>
-         <div class="slide"><img src="./image/11.png" alt=""></div>
-         <div class="slide"><img src="./image/12.png" alt=""></div>
-         <div class="slide"><img src="./image/port.png" alt=""></div>
-         <div class="slide"><img src="./image/port1.png" alt=""></div>
-         <div class="slide"><img src="./image/trac1.png" alt=""></div>
-         <div class="slide"><img src="./image/trac2.png" alt=""></div>
-         <div class="slide"><img src="./image/port.png" alt=""></div>
-         <div class="slide"><img src="image/trac3.png" alt=""></div>
-      </div>
+   <div class="container">
+      <div class="cube">hanif</div>
+      
    </div>
 </body>
 </html>

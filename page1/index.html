@@ -52,6 +52,17 @@
         
     }
 
+    .item-img{
+      background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px),
+      -webkit-linear-gradient(90deg, #ffffff7b 1px ,transparent 1px)
+      ;
+      background-size: 40px 40px;
+      position: relative;
+
+    }
+    
+   
+
     </style>
   </head>
   <body class="bg-black">
@@ -136,7 +147,7 @@
         </div>
         <!-- 333333 -->
         <div class="min-w-min-screen flex flex-col items-center r py-10 ">
-          <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 px-3 rounded-3xl">
+          <div class="flex items-center gap-2 bg-black/75 shadow-sb p-1 px-3 rounded-3xl">
             <div class="text-nav-color flex gap-2">C'est pour ça qu'on nous fait confiance</div>
           </div>
 
@@ -162,9 +173,9 @@
         </div>
 
         <!-- 4444 -->
-         <div class="min-w-min-screen flex flex-col items-center justify-center">
+         <div class="min-w-min-screen flex flex-col items-center justify-center pb-10">
           <!-- -------process------- -->
-          <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 px-3 rounded-3xl">
+          <div class="flex items-center gap-2 bg-black/75 shadow-sb p-1 px-3 rounded-3xl">
             <div class="text-nav-color flex gap-2">Notre process</div>
           </div>
 
@@ -173,23 +184,62 @@
 
           <!-- ----------items -------- -->
            <div class="grid-cols-3 grid pt-9 gap-6">
-            <!-- item -->
-            <div class="bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
+            <!-- item 11 -->
+            <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
               <!-- image -->
-              <div class="h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
+              <div class="item-img h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
                   <p>ha</p>
               </div>
-              <div>
+
+              <div class="pt-7">
                 <h1 class="text-[30px] text-text text-center">1.Onboarding</h1>
                 <p class="text-center text-nav-color ">Via notre formulaire, on récolte toutes les informations nécessaires</p>
               </div>
             </div>
 
-            
+                 <!-- item 222 -->
+            <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
+              <!-- image -->
+              <div class="item-img h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
+                  <p>ha</p>
+              </div>
+
+              <div class="pt-7">
+                <h1 class="text-[30px] text-text text-center">2.Création</h1>
+                <p class="text-center text-nav-color ">Vos miniatures sont conçues avec notre méthode unique. éprouvée sur plus de 500</p>
+              </div>
+            </div>
+
+             <!-- item 333 -->
+             <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
+              <!-- image -->
+              <div class="item-img h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
+                  <p>ha</p>
+              </div>
+
+              <div class="pt-7">
+                <h1 class="text-[30px] text-text text-center">3.Livraison</h1>
+                <p class="text-center text-nav-color ">En moins de 48 heures. Vous recever votre miniature parfaitement optimisée pour vous.</p>
+              </div>
+            </div>
            </div>
 
          </div>
          <!-- 5555 -->
+          <div class="min-w-min-screen flex flex-col justify-center items-center py-10">
+            <!-- ------------button -------- -->
+            <div class="pb-10"> <button class="w-[230px] text-text bg-gradient-to-b from-orange-500 to-orange-400/75 to-99% p-2 rounded-lg ">Je veux ma minature</button></div>
+
+              <!-- text -->
+              <div class="p-1 text-nav-color shadow-sb rounded-3xl px-3 flex justify-center items-center"><p>Prix simple</p></div>
+             <div class="pt-10">
+              
+                <div class="text-text text-[54px]"><h1>Un Prix Fixe Et Transparent</h1></div>
+
+              </div>
+           
+          </div>
+          <!--  -->
           <div></div>
     </div>
   </body>
