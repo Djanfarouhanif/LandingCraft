@@ -38,6 +38,13 @@ module.exports = {
      },
     borderWidth: {
       '8': '4px'
+    },
+
+    screens: {
+
+      'res': {'max': '900px'},
+
+      'minR': {'max': '600px'}
     }
       
     },

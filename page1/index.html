@@ -12,7 +12,7 @@
         padding: 0;
       }
 
-      .b{
+      .b, .end-items{
      
      background-color: #000;
      background-image: linear-gradient(45deg,
@@ -32,6 +32,8 @@
      
      ;
      background-size: 10px 10px;
+
+     box-shadow:inset 0px 0px 100px 50px black;
     
     }
     .prof{
@@ -74,12 +76,12 @@
 
     </style>
   </head>
-  <body class="bg-black">
-    <div class="px-20">
+  <body class="bg-black overflow-auto">
+    <div class=" overflow-hidden p-20 pt-0 res:p-2">
       <!-- 1111 -->
-        <div class="b  min-w-min-screen p-6 rounded-b-2xl   flex flex-col items-center gap-20 ">
+        <div class="b   p-6  rounded-b-2xl   flex flex-col items-center gap-20 ">
           <!-- --------------- nav bar ----------------------------- -->
-           <div class="fixed z-10 flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10">
+           <div class="fixed res:hidden z-10 flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10 ">
             <!-- Logo -->
             <div class="text-button">MiniaMaker.ia</div>
             <!-- Corpt du navbar -->
@@ -105,11 +107,11 @@
               </div>
               <!-- Offre plus button d'action -->
                <div>
-                  <div class="text-button font-bold text-center text-[54px] w-[560px]">Triplez votre CTR avec nos <span class="text-text">minature irrésistibles.</span> pour seulement <span class="text-text">37€/mois.</span></div>
+                  <div class="text-button font-bold text-center text-[54px] w-[560px] minR:w-[350px] minR:text-[25px] ">Triplez votre CTR avec nos <span class="text-text">minature irrésistibles.</span> pour seulement <span class="text-text">37€/mois.</span></div>
                </div>
                <div class="text-text">Livraison en moins de 48H et retours illimités.</div>
                <!-- button -->
-               <div class="flex gap-4">
+               <div class="flex flex-wrap justify-center gap-4">
                   <button class="w-[230px] text-text bg-gradient-to-b from-orange-500 to-orange-400/75 to-99% p-2 rounded-lg ">Je veux ma minature</button>
                   <button class="w-[230px] text-text bg-gradient-to-t from-[rgb(19,19,19)] from-50% to-[rgb(37,36,37)] to-90%  p-2 rounded-lg" >Je réserve un appel</button>
                </div>
@@ -118,7 +120,7 @@
             </div>
         </div>
         <!-- 222222 -->
-        <div class="min-w-min-screen p-6 px-0">
+        <div class=" p-6 px-0">
           <!-- Premier div -->
            <div class="overflow-hidden grid   relative">
 
@@ -155,15 +157,15 @@
             
         </div>
         <!-- 333333 -->
-        <div class="min-w-min-screen flex flex-col items-center r py-10 ">
+        <div class=" flex flex-col items-center r py-10 ">
           <div class="flex items-center gap-2 bg-black/75 shadow-sb p-1 px-3 rounded-3xl">
             <div class="text-nav-color flex gap-2">C'est pour ça qu'on nous fait confiance</div>
           </div>
 
-          <div class="text-text text-[54px]"> Vos Stats Explosent: </div>
+          <div class="text-text text-[54px] minR:text-[30px] pb-10"> Vos Stats Explosent: </div>
 
-          <div class="grid-cols-2 grid gap-4 h-[320px]">
-              <div class= "prof  h-full">
+          <div class="grid-cols-2 grid gap-4 res:grid-cols-1">
+              <div class= "prof  h-full w-[400px]">
                   <div class=" border-l border-orange-500 p-8 pb-16">
                     <h1 class="text-text text-[30px] pb-4">Yannis Haismann</h1>
                     <p class="text-nav-color">Avec notre minature optimisée, Yannis a boosté son CTR de 2 % à 6,4% ce qui lui a permis de générer 2,4 fois plus de vues sur cette vidéo</p>
@@ -174,7 +176,7 @@
                   </div>
               </div>
               <!-- img  -->
-              <div class="relative  bg-[#343333] rounded-3xl border-[40px] border-[#343333] overflow-hidden">
+              <div class=" res:w-[400px] relative  bg-[#343333] rounded-3xl border-[40px] border-[#343333] overflow-hidden">
                 <div class=" absolute bottom-5 text-text flex items-center gap-2 p-4"> <div class="w-[54px] h-[54px] rounded-full bg-[#1c1b1b]"></div> <p>Yannis Haismann</p> </div>
                 <img class="w-full h-full object-center rounded-2xl " src="./image/11.png" alt="">
               </div>
@@ -182,19 +184,19 @@
         </div>
 
         <!-- 4444 -->
-         <div class="min-w-min-screen flex flex-col items-center justify-center pb-10">
+         <div class="flex flex-col items-center justify-center pb-10">
           <!-- -------process------- -->
           <div class="flex items-center gap-2 bg-black/75 shadow-sb p-1 px-3 rounded-3xl">
             <div class="text-nav-color flex gap-2">Notre process</div>
           </div>
 
-          <div class="text-text text-[54px] py-4"> Notre Process En 3 Etapes: </div>
+          <div class="text-text text-[54px] res:text-[40px] minR:text-[30px] py-4 text-center"> Notre Process En 3 Etapes: </div>
           <div class="text-nav-color">Gagnez du temps, gagnez des vues.</div>
 
           <!-- ----------items -------- -->
-           <div class="grid-cols-3 grid pt-9 gap-6">
+           <div class="flex flex-wrap justify-center pt-9 gap-6 ">
             <!-- item 11 -->
-            <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
+            <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center w-[300px] " >
               <!-- image -->
               <div class="item-img h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
                   <p>ha</p>
@@ -207,7 +209,7 @@
             </div>
 
                  <!-- item 222 -->
-            <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
+            <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center w-[300px]">
               <!-- image -->
               <div class="item-img h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
                   <p>ha</p>
@@ -220,7 +222,7 @@
             </div>
 
              <!-- item 333 -->
-             <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center">
+             <div class=" bg-[#161616] rounded-2xl p-10 flex flex-col items-center justify-center w-[300px]">
               <!-- image -->
               <div class="item-img h-[150px] w-full rounded-2xl shadow-item flex justify-center items-center">
                   <p>ha</p>
@@ -235,7 +237,7 @@
 
          </div>
          <!-- 5555 -->
-          <div class="min-w-min-screen flex flex-col justify-center items-center py-10">
+          <div class="flex flex-col justify-center items-center py-10">
             <!-- ------------button -------- -->
             <div class="pb-10"> <button class="w-[230px] text-text bg-gradient-to-b from-orange-500 to-orange-400/75 to-99% p-2 rounded-lg ">Je veux ma minature</button></div>
 
@@ -245,7 +247,7 @@
 
              <div class="py-20">
               
-                <div class="text-text text-[54px]"><h1>Un Prix Fixe Et Transparent</h1></div>
+                <div class="text-text text-center text-[54px] res:text-[40px] minR:text-[30px]"><h1>Un Prix Fixe Et Transparent</h1></div>
 
                 <div class="text-nav-color">
                   <p class="text-center">Nos prix sont conçues pour les crèateurs de contenu qui</p>
@@ -259,8 +261,8 @@
               </div>
           </div>
           <!--6666  -->
-          <div class="min-w-min-screen ">
-                <div class="grid-cols-3 grid gap-8 p-8">
+          <div class=" ">
+                <div class="grid-cols-3  res:flex res:flex-col items-center  grid gap-8 p-8 ">
                   <!-- items 1 -->
                   <div class="bg-[#161616] p-8 rounded-3xl  w-[290px]">
                     <h1 class="text-text text-[30px]">Standard</h1>
@@ -315,9 +317,9 @@
                 </div>
           </div>
           <!-- ---777777777------- -->
-           <div class="min-w-min-screen py-10 ">
+           <div class="h-[80vh] py-10 ">
 
-            <div class="text-text text-[54px] text-center">Questions Fréquentes</div>
+            <div class="text-text text-[54px] minR:text-[30px] text-center">Questions Fréquentes</div>
             
             <!-- question -->
             <div>
@@ -325,7 +327,39 @@
             </div>
            </div>
            <!-- ----------888888888666666666 -->
-            <div></div>
+            <div class="end-items flex flex-col justify-center items-center border-[1px] border-[#87848421] rounded-3xl">
+
+              <div class="flex flex-col items-center justify-center">
+                <div class="text-text font-bold text-center text-[54px] res:text-[40px] minR:text-[25px]">
+                  <p>Triplez votre CTR avec nos</p>
+                   minature irrésistibles.</div>
+
+                <div class="w-[400px] text-nav-color text-center py-4">Arrêtez de perdre des vues bêtement.Faites enfin exploser les stats de votre chaîne Youtube grâce à un CTR 3x supérieur</div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 py-10">
+              <button class="w-[230px] text-text bg-gradient-to-b from-orange-500 to-orange-400/75 to-99% p-2 rounded-lg ">Je veux ma minature</button>
+              <button class="w-[230px] text-text bg-gradient-to-t from-[rgb(19,19,19)] from-50% to-[rgb(37,36,37)] to-90%  p-2 rounded-lg" >Je réserve un appel</button>
+           </div>
+
+           <div class="flex flex-col items-center justify-center">
+              <div class="flex text-nav-color gap-5 py-3">
+                <span>Résultats</span>
+                <span>Process</span>
+                <span>Prix</span>
+                <span>FAQ</span>
+                <span>Affilation(20%)</span>
+              </div>
+
+              <div class="flex text-nav-color gap-5 pb-10">
+                <span>Mentions légales</span>
+                <span>CGU</span>
+                <span>CGV</span>
+                <span>Données personnelles</span>
+                
+              </div>
+           </div>
+
     </div>
   </body>
 </html>
