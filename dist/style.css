@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .b, .end-items{
+ 
+    background-color: #000;
+    background-image: linear-gradient(45deg,
+    #ea9b1d7c 1px,
+    transparent 1px,
+    transparent 60px,
+    #ea9b1d7c 60px
+   
+    ),
+    linear-gradient(135deg,
+    #ea9b1d7c 1px,
+    transparent 1px,
+    transparent 60px,
+    #ea9b1d7c 60px
+   
+    )
+    
+    ;
+    background-size: 10px 10px;
+   
+    box-shadow:inset 0px 0px 100px 50px black;
+   
+   }
+   .prof{
+     position: relative;
+   }
+   
+   .prof::after {
+       content: '';
+       position: absolute;
+       width: 15%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.599);
+       right: 0;
+       top: 0;
+       z-index: 4;
+       
+     
+       
+   }
+   
+   .item-img{
+     background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px),
+     -webkit-linear-gradient(90deg, #ffffff7b 1px ,transparent 1px)
+     ;
+     background-size: 40px 40px;
+     position: relative;
+   
+   }
+   
+   .item-img::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+     box-shadow:inset 0px 0px 100px 50px ;
+   }
+   
+   /* navbar toggle */
+   
+   .menu-toggle {
+     transform: translateY(0px);
+     transition: all 0.5s ease;
+   }
+   .navBar {
+     transition: all 0.5s ease ;
+   }
+   
+   /* animation de border de button */
+   .btn {
+    position: relative;
+     background: repeating-conic-gradient(from var(--a), orange 0%, orange 5%,
+     transparent 5%, transparent 40%, orange 50%
+      );
+      animation: animate 8s linear infinite;
+      border-radius: 20px;
+   
+   }
+   
+   @property --a {
+   syntax: '<angle>';
+     inherits: false;
+     initial-value: 0deg;
+   }
+   @keyframes animate {
+   0% {
+     --a: 0deg;
+   }
+   100% {
+     --a: 360deg
+   }
+   
+   }
+   
+   .btn::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: repeating-conic-gradient(from var(--a), orange 0%,
+    orange 5%, transparent 5%, transparent 40%, orange 50%);
+    animation: animate 8s linear infinite;
+    animation-delay: -1s;
+    border-radius: 20px;
+   }
+
+   .btn::after{
+    content: 'Je réserve un appel ';
+    position: absolute;
+    inset: 2px;
+    background: rgb(145, 142, 142);
+    border-radius: 15px;
+    border: 4px solid black;
+    
+   }

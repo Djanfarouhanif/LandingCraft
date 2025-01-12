@@ -3,85 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../src/output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <style>
-      *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      .b, .end-items{
-     
-     background-color: #000;
-     background-image: linear-gradient(45deg,
-     #ea9b1d7c 1px,
-     transparent 1px,
-     transparent 60px,
-     #ea9b1d7c 60px
-
-     ),
-     linear-gradient(135deg,
-     #ea9b1d7c 1px,
-     transparent 1px,
-     transparent 60px,
-     #ea9b1d7c 60px
-
-     )
-     
-     ;
-     background-size: 10px 10px;
-
-     box-shadow:inset 0px 0px 100px 50px black;
-    
-    }
-    .prof{
-      position: relative;
-    }
-
-    .prof::after {
-        content: '';
-        position: absolute;
-        width: 15%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.599);
-        right: 0;
-        top: 0;
-        z-index: 4;
-        
-      
-        
-    }
-
-    .item-img{
-      background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px),
-      -webkit-linear-gradient(90deg, #ffffff7b 1px ,transparent 1px)
-      ;
-      background-size: 40px 40px;
-      position: relative;
-
-    }
-
-    .item-img::after{
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      box-shadow:inset 0px 0px 100px 50px ;
-    }
-    
-    .menu-toggle {
-      transform: translateY(0px);
-      transition: all 0.5s ease;
-    }
-    .navBar {
-      transition: all 0.5s ease ;
-    }
    
-
-    </style>
   </head>
   <body class="bg-black overflow-auto">
     <div class=" overflow-hidden p-20 pt-0 res:p-2">
@@ -89,9 +13,9 @@
         <div class="b   p-6  rounded-b-2xl   flex flex-col items-center gap-20 ">
 
           <!-- Toggle menu -->
-           <div class="menu hidden res:block text-text cursor-pointer">han</div>
+           <div class="menu z-40 hidden res:block text-text cursor-pointer">han</div>
           <!-- --------------- nav bar ----------------------------- -->
-           <div class="navBar res:translate-y-[-400px] transition-all fixed res:mt-10 res:flex-col res:justify-center res:items-center z-10 flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10 ">
+           <div class="navBar res:translate-y-[-400px] transition-all fixed res:mt-10 res:flex-col res:justify-center items-center z-10 flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10 ">
             <!-- Logo -->
             <div class="text-button">MiniaMaker.ia</div>
             <!-- Corpt du navbar -->
@@ -104,7 +28,7 @@
              </div>
 
              <!-- Contact du nav bar  -->
-              <div class="text-nav-color cursor-pointer bg-slate-100/10 w-[190px] text-center rounded-sm">Je réserve un apllel <span class="text-button">L</span></div>
+              <div class="btn text-nav-color cursor-pointer w-[190px] h-[35px] text-center rounded-sm flex items-center justify-center z-20">Je réserve un apllel <span class="text-button">L</span></div>
              
            </div>
 
@@ -117,7 +41,7 @@
               </div>
               <!-- Offre plus button d'action -->
                <div>
-                  <div class="text-button font-bold text-center text-[54px] w-[560px] minR:w-[350px] minR:text-[25px] ">Triplez votre CTR avec nos <span class="text-text">minature irrésistibles.</span> pour seulement <span class="text-text">37€/mois.</span></div>
+                  <div class="text-button font-bold text-center text-[54px] w-[560px] minR:w-[350px] minR:text-[25px] animate-bl">Triplez votre CTR avec nos <span class="text-text">minature irrésistibles.</span> pour seulement <span class="text-text">37€/mois.</span></div>
                </div>
                <div class="text-text">Livraison en moins de 48H et retours illimités.</div>
                <!-- button -->

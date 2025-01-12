@@ -17,6 +17,7 @@ module.exports = {
      animation: {
         speed1: 'speed1 10s  infinite linear',
         speed2: 'speed2 10s  infinite linear',
+        bl: 'bl 2s linear'
        
      },
      keyframes: {
@@ -29,6 +30,17 @@ module.exports = {
         '0%': {transform:  'translateX( calc(-350px * 4))'},
 
         '100%': { transform: 'translateX(0%)' }
+      },
+      bl: {
+        '0%': {'filter': 'blur(10px)',
+          'opacity': '0'
+        },
+        '50%': {'filter': 'blur(5px)',
+          'opacity': '0.5'
+        },
+        '100%': {'filter': 'blur(0)',
+          'opacity' : '1'
+        }
       }
       
      },
