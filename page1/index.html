@@ -72,6 +72,13 @@
       box-shadow:inset 0px 0px 100px 50px ;
     }
     
+    .menu-toggle {
+      transform: translateY(0px);
+      transition: all 0.5s ease;
+    }
+    .navBar {
+      transition: all 0.5s ease ;
+    }
    
 
     </style>
@@ -80,12 +87,15 @@
     <div class=" overflow-hidden p-20 pt-0 res:p-2">
       <!-- 1111 -->
         <div class="b   p-6  rounded-b-2xl   flex flex-col items-center gap-20 ">
+
+          <!-- Toggle menu -->
+           <div class="menu hidden res:block text-text cursor-pointer">han</div>
           <!-- --------------- nav bar ----------------------------- -->
-           <div class="fixed res:hidden z-10 flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10 ">
+           <div class="navBar res:translate-y-[-400px] transition-all fixed res:mt-10 res:flex-col res:justify-center res:items-center z-10 flex gap-7 p-3  rounded-3xl bg-black/75 border border-white/10 ">
             <!-- Logo -->
             <div class="text-button">MiniaMaker.ia</div>
             <!-- Corpt du navbar -->
-             <div class="flex gap-4 ">
+             <div class="flex res:flex-col gap-4 ">
               <div class="text-nav-color cursor-pointer">Résultas</div>
               <div class="text-nav-color cursor-pointer">Process</div>
               <div class="text-nav-color cursor-pointer">Prix</div>
@@ -99,7 +109,7 @@
            </div>
 
            <!-- ------------------ body 1--------------------- -->
-            <div class=" flex flex-col gap-8 items-center justify-center pt-20">
+            <div class=" flex flex-col gap-8 items-center justify-center res:pt-4 pt-20">
               <!-- Offre de lancement -->
               <div class="flex items-center gap-2 bg-black/75 border border-white/10 p-1 px-3 rounded-3xl">
                 <div class="w-2 h-2 bg-button rounded-full"></div>
@@ -361,5 +371,6 @@
            </div>
 
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
